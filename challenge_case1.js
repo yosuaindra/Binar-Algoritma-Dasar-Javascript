@@ -1,3 +1,6 @@
+// case 1
+// Buatlah algoritma untuk menampilkan  pengkuadratan dan pembagian angka tertentu. input angka melalui prompt dan tampilkan di console
+
 var angka1 = prompt('input angka 1'); 
 var angka2 = prompt('input angka 2'); 
 

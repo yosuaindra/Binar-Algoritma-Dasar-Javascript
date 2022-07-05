@@ -1,11 +1,18 @@
+// case 3
+// tampilkanlah tanggal bulan dan tahun hari ini, besok dan kemarin
+
+const bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni",
+  "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+];
+
 let sekarang = new Date();
-sekarang = sekarang.toDateString();
-console.log("hari ini adalah "+sekarang);
+sekarang.toDateString();
+console.log(`hari ini adalah ${sekarang.getDate()} ${bulan[sekarang.getMonth()]} ${sekarang.getFullYear()}`);
 
-let besok = new Date(sekarang);
+let besok = new Date();
 besok.setDate(besok.getDate()+1);
-console.log("hari Besok adalah "+besok.toDateString());
+console.log(`hari Besok adalah ${besok.getDate()} ${bulan[besok.getMonth()]} ${besok.getFullYear()}`)
 
-let kemarin = new Date(sekarang);
+let kemarin = new Date();
 kemarin.setDate(kemarin.getDate()-1);
-console.log("hari Kemarin adalah "+kemarin.toDateString());
+console.log(`hari kemarin adalah ${kemarin.getDate()} ${bulan[kemarin.getMonth()]} ${kemarin.getFullYear()}`)
